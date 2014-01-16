@@ -22,7 +22,7 @@ end
 
 # run mysql cli to create tables
 execute "phpmyadmin-create-tables" do
-  command "\"#{node['mysql']['server']['mysql_bin']}\" -u root #{node['mysql']['server_root_password'].empty? ? '' : '-p' }\"#{node['mysql']['server_root_password']}\" \"#{node[:pma][:conf][:control_database]}\" < \"#{sql_file}\""
+  command "\"#{node['mysql']['server']['mysql_bin']}\" -u root #{node['mysql']['server_root_password'].empty? ? '' : '-p' }\"#{node['mysql']['server_root_password']}\" < \"#{sql_file}\""
 end
 
 # remove temp file (if exists)
