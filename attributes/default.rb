@@ -15,7 +15,7 @@ when '4.1.3'
 	default[:pma][:checksum] = '6843953b09babd392a48f85e7afb5ac6826bd7e2fd1c8e0c15456f42060386dc'	
 end
 
-default[:pma][:full_url] = "#{node[:pma][:mirror]}/#{node[:pma][:version]}/phpMyAdmin-#{node[:pma][:version]}-all-languages.tar.gz"
+default[:pma][:full_url] = "#{node[:pma][:mirror]}/#{node[:pma][:version]}/phpMyAdmin-#{node[:pma][:version]}-all-languages.tar.gz?r=&ts=1394659442&use_mirror=garr"
 
 case node[:platform_family]
 when 'rhel'
